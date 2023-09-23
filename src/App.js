@@ -5,6 +5,7 @@ import Rs from "./pages/Rs";
 import Salesbook from "./pages/Salesbook";
 import Company from "./pages/Company";
 import Password from "./pages/Password";
+import Back from '../src/Assest/LandingImage.png';
 
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/party" element={<Party />} />
-        <Route path="/rs" element={<Rs/>} />
+        <Route path="/party" element={<Party style={{ backgroundImage: `url(${Back})` }} />} />
+        <Route path="/rs" element={<Rs />} />
         <Route path="/salesbook" element={<Salesbook />} />
         <Route path="/company" element={<Company />} />
         <Route path="/password" element={<Password />} />

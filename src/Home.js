@@ -4,11 +4,7 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 
 function Home() {
-
     const [toggle, setToggle] = useState(false);
-
-
-
     return (
         <>
             <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 top-0 z-50">
