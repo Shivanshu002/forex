@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Home";
 import Party from "./pages/Party";
 import Rs from "./pages/Rs";
 import Salesbook from "./pages/Salesbook";
 import Company from "./pages/Company";
 import Password from "./pages/Password";
 import Back from '../src/Assest/LandingImage.png';
+import Home from '../src/pages/Home';
 
 
 function App() {

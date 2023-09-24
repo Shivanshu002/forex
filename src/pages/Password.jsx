@@ -1,7 +1,8 @@
+import Home from "./Home";
+
 function Password() {
     return (
         < >
-
             <div className='w-fit h-fit my-3 p-2 container mx-auto bg-slate-400 rounded '>
                 <div className="flex md:flex-row  flex-col justify-between p-2 md:items-start  gap-2">
                     <div className='flex justify-between items-center gap-2'>

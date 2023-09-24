@@ -1,30 +1,32 @@
 import { MdOutlineNewLabel } from 'react-icons/md'
-import { GrDocumentUpdate } from 'react-icons/gr';
 import { MdDeleteForever } from 'react-icons/md';
 import { BsFillSave2Fill } from 'react-icons/bs';
+import { VscDiffModified } from 'react-icons/vsc';
 
 function Party() {
     return (
         <div >
 
-            <div className='flex gap-10 justify-center bg-gradient-to-r from-purple-500 to-blue-500 p-3  '>
-                <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300'>
+            <aside className='hidden lg:flex fixed flex-col top-[25%] left-0 gap-4 bg-gradient-to-r from-purple-500 to-blue-500 p-3  w-fit rounded-lg '>
+                <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300 text-white'>
                     <MdOutlineNewLabel size={20} />
                     <span>New</span>
                 </div>
-                <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300'>
-                    <GrDocumentUpdate size={20} />
+                <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300 text-white'>
+                    <VscDiffModified size={20} className='' />
                     <span>Modify</span>
                 </div>
-                <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300'>
+                <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300 text-white'>
                     <MdDeleteForever size={20} />
                     <span>Delete</span>
                 </div>
-                <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300'>
+                <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300 text-white'>
                     <BsFillSave2Fill size={20} />
                     <span>Save</span>
                 </div>
-            </div>
+            </aside>
+
+
             {/* Updated */}
             <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
                 <div className='flex lg:justify-normal justify-between'>

@@ -2,12 +2,12 @@ import { MdOutlineNewLabel } from 'react-icons/md'
 import { GrDocumentUpdate } from 'react-icons/gr';
 import { MdDeleteForever } from 'react-icons/md';
 import { BsFillSave2Fill } from 'react-icons/bs';
+import Home from './Home';
 
 
 function Rs() {
     return (
-
-        <div>
+        <>
             <div className='flex gap-10 justify-center bg-gradient-to-r from-purple-500 to-blue-500 p-3  '>
                 <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300'>
                     <MdOutlineNewLabel size={20} />
@@ -27,164 +27,170 @@ function Rs() {
                 </div>
             </div>
 
-
-            {/* for risk cat */}
             <div>
-                <div>
 
-                    <div className='w-[100%] h-fit my-3 p-2 container mx-auto bg-slate-400 rounded  '>
-                        <div className='flex md:flex-row flex-col justify-between p-2 md:items-start md:gap-0 gap-2'>
-                            <div className='flex justify-between items-center gap-2'>
-                                <lable>Risk Catg.</lable>
+                <div className='box-border h-[400px] w-1/2 mt-4'>
 
-                                <input type='text' />
-
+                    <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2'>
+                                <h1>Doc#:</h1>
+                                <h1>Date:</h1>
                             </div>
-
-
-                            <div className='flex justify-between items-center gap-2'>
-                                <label>Currency</label>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
                                 <input type='text' />
-
+                                <input type='text' />
                             </div>
-                            <div className='flex justify-between items-center gap-2'>
-                                <label>In form</label>
-                                <input type='text' />
+                        </div>
 
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2' >
+                                <h1>Party:</h1>
+                                <h1>Walking:</h1>
                             </div>
-                            <div className='flex justify-between items-center gap-2'>
-                                <label>VTM Bank</label>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
                                 <input type='text' />
-
+                                <input type='text' />
                             </div>
                         </div>
                     </div>
 
-                    <div className='w-[100%] h-fit my-3 p-2 container mx-auto bg-slate-400 rounded'>
-                        <div className='flex md:flex-row flex-col justify-between p-2 md:items-start md:gap-0 gap-2'>
-                            <div className='flex justify-between items-center gap-2'>
-                                <label>Card No.</label>
-                                <input type='text' />
-                            </div>
 
-                            <div className='flex justify-between items-center gap-2'>
-                                <label>Quantity</label>
+                    <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2'>
+                                <h1>Passport No:</h1>
+                                <h1>Passenger:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
                                 <input type='text' />
                             </div>
+                        </div>
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2' >
+                                <h1>Nationality:</h1>
+                                <h1>Address:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
+                                <input type='text' />
+                            </div>
+                        </div>
 
-                            <div className='flex justify-between items-center gap-2'>
-                                <label>Rates</label>
-                                <input type='text' />
-                            </div>
-                            <div className='flex justify-between items-center gap-2'>
-                                <label>Ammount</label>
-                                <input type='text' />
-                            </div>
+                    </div>
 
+
+                    <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2'>
+                                <h1>PlaceOfSupply:</h1>
+                                <h1>Pan No:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
+                                <input type='text' />
+                            </div>
+                        </div>
+
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2' >
+                                <h1>Issued at:</h1>
+                                <h1>Realtion:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' placeholder='date' />
+                                <input type='text' placeholder='self/other' />
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2'>
+                                <h1>Date:</h1>
+                                <h1>Exp Date:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
+                                <input type='text' />
+                            </div>
+                        </div>
+
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2' >
+                                <h1>PreccedingTo:</h1>
+                                <h1>Purpose:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
+                                <input type='text' placeholder='Tourism / business' />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className='box-border h-[400px] w-1/2 mt-4'>
+
+                    <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2'>
+                                <h1>Currency:</h1>
+                                <h1>In form:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
+                                <input type='text' />
+                            </div>
+                        </div>
+
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2' >
+                                <h1>VTM Bank:</h1>
+                                <h1>Card No:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
+                                <input type='text' />
+                            </div>
                         </div>
                     </div>
 
+                    <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2'>
+                                <h1>Quantity:</h1>
+                                <h1>Rate:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
+                                <input type='text' />
+                            </div>
+                        </div>
+                        <div className='flex lg:justify-normal justify-between'>
+                            <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2' >
+                                <h1>Ammount:</h1>
+                            </div>
+                            <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
+                            </div>
+                        </div>
 
-                </div>
+                    </div>
+                    <div className='my-5 flex justify-between'>
+                        <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Insert</button>
+                        <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Delete</button>
+                        <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Reset</button>
+                    </div>
 
-                <div className='my-5 flex justify-evenly'>
-                    <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Insert</button>
-                    <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Delete</button>
-                    <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Reset</button>
                 </div>
 
             </div>
 
-
-
-            <div className='w-[100%] h-fit my-3 p-2 container mx-auto bg-slate-400 rounded '>
-                <div className='flex md:flex-row flex-col justify-between p-2 md:items-start md:gap-0 gap-2'>
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Doc#</label>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Date</label>
-                        <input type='date' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Party</label>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Walking</label>
-                        <input type='text' />
-                    </div>
-
-                </div>
-            </div>
-
-            <div className='w-[100%] h-fit my-3 p-2 container mx-auto bg-slate-400 rounded '>
-                <div className='flex md:flex-row flex-col justify-between p-2 md:items-start md:gap-0 gap-2'>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Passprt No.</label>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <lable>Passenger</lable>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <lable>Nationality</lable>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Address</label>
-                        <input type='text' />
-                    </div>
-
-                </div>
-
-                <div className='flex md:flex-row flex-col justify-between p-2 md:items-start md:gap-0 gap-2'>
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Place of Supply</label>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>PAN</label>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Relation</label>
-                        <input type='text' />
-                    </div>
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Issued</label>
-                        <input type='text' />
-                    </div>
-                </div>
-
-                <div className='flex md:flex-row flex-col justify-between p-2 md:items-start md:gap-0 gap-2'>
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Exp Date:</label>
-                        <input type='date' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Precedding to:</label>
-                        <input type='text' />
-                    </div>
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Perpose</label>
-                        <input type='text' />
-                    </div>
-                </div>
-
-            </div>
 
             <div className='w-[100%] h-fit my-3 p-2 container mx-auto bg-slate-400 rounded '>
                 <div className='flex md:flex-row flex-col justify-between'>
@@ -286,7 +292,7 @@ function Rs() {
                 </div>
             </div>
 
-        </div>
+        </>
     )
 }
 export default Rs;
