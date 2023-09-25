@@ -3,25 +3,18 @@ import Home from "./Home";
 function Password() {
     return (
         < >
-            <div className='w-fit h-fit my-3 p-2 container mx-auto bg-slate-400 rounded '>
-                <div className="flex md:flex-row  flex-col justify-between p-2 md:items-start  gap-2">
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Exiting Password </label>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>New Password</label>
-                        <input type='text' />
-                    </div>
-
-                    <div className='flex justify-between items-center gap-2'>
-                        <label>Confirm Password</label>
-                        <input type='text' />
-                    </div>
-                </div>
-
-            </div>
+                        <div className='grid grid-flow-row lg:grid-flow-col justify-center'> 
+                 <div className='flex lg:justify-normal justify-between'> 
+                     <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2'> 
+                         <h1>Password:</h1> 
+                         <h1>Confirm Password:</h1> 
+                     </div> 
+                     <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'> 
+                         <input type='text' /> 
+                         <input type='text' /> 
+                     </div> 
+                 </div> 
+             </div>
             <div className="flex justify-center">
                 <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Save and Exit</button>
             </div>
