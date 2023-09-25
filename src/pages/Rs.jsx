@@ -2,12 +2,32 @@ import { MdOutlineNewLabel } from 'react-icons/md'
 import { GrDocumentUpdate } from 'react-icons/gr';
 import { MdDeleteForever } from 'react-icons/md';
 import { BsFillSave2Fill } from 'react-icons/bs';
-import Home from './Home';
+import { useState, useEffect } from 'react';
 
 
 function Rs() {
+
+    const [data, setData] = useState(null)
+
+    useEffect(() => {
+        fetch("https://dummyjson.com/users")
+            .then(response => response.json())
+            .then((data) => {
+                setData(data.message);
+                console.log(data);
+            });
+    }, []);
+
     return (
         <>
+            {/* {
+                data.map(() => {
+
+                })
+            } */}
+
+
+
             <div className='flex gap-10 justify-center bg-gradient-to-r from-purple-500 to-blue-500 p-3  '>
                 <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300'>
                     <MdOutlineNewLabel size={20} />
@@ -29,7 +49,7 @@ function Rs() {
 
             <div>
 
-                <div className='box-border h-[400px] w-1/2 mt-4'>
+                <div className='box-border lg:h-[350px] h-[700px]'>
 
                     <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
                         <div className='flex lg:justify-normal justify-between'>
@@ -132,9 +152,10 @@ function Rs() {
 
                     </div>
 
+
                 </div>
 
-                <div className='box-border h-[400px] w-1/2 mt-4'>
+                <div className='box-border h-[400px]'>
 
                     <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
                         <div className='flex lg:justify-normal justify-between'>
@@ -192,12 +213,14 @@ function Rs() {
             </div>
 
 
+
+
             <div className='w-[100%] h-fit my-3 p-2 container mx-auto bg-slate-400 rounded '>
                 <div className='flex md:flex-row flex-col justify-between'>
 
                     <div className='mt-3 text-center'>
                         <h4 className='bg-green-300 pl-3 pr-3 rounded'>Sno</h4>
-                        <h5>0</h5>
+                        <h5>{data}</h5>
                     </div>
                     <div className='mt-3 text-center'>
                         <h4 className='bg-green-300 pl-3 pr-3 rounded'>Currency</h4>

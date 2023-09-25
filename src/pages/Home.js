@@ -38,7 +38,6 @@ function Home() {
                     <li className='p-5'> <Link to={'/password'}> Password</Link></li>
                 </ul>
             </nav>
-            {/* <Party/> */}
         </>
     )
 }

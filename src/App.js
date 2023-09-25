@@ -10,16 +10,18 @@ import Home from '../src/pages/Home';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/party" element={<Party style={{ backgroundImage: `url(${Back})` }} />} />
-        <Route path="/rs" element={<Rs />} />
-        <Route path="/salesbook" element={<Salesbook />} />
-        <Route path="/company" element={<Company />} />
-        <Route path="/password" element={<Password />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/party" element={<Party style={{ backgroundImage: `url(${Back})` }} />} />
+          <Route path="/rs" element={<Rs />} />
+          <Route path="/salesbook" element={<Salesbook />} />
+          <Route path="/company" element={<Company />} />
+          <Route path="/password" element={<Password />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
