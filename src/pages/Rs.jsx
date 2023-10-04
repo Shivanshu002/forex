@@ -212,9 +212,6 @@ function Rs() {
 
             </div>
 
-
-
-
             <div className='w-[100%] h-fit my-3 p-2 container mx-auto bg-slate-400 rounded '>
                 <div className='flex md:flex-row flex-col justify-between'>
 
@@ -244,9 +241,6 @@ function Rs() {
                     </div>
                 </div>
             </div>
-
-
-
 
             <div className='w-[100%] h-fit p-2 my-3 container mx-auto bg-slate-400 rounded'>
                 <div>
