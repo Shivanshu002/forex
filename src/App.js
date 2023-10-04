@@ -9,8 +9,6 @@ function App() {
 
   return (
     <>
-
-      <Navbar />
       <Routes>
         <Route path="/" element={<Party />} />
         <Route path="/rs" element={<Rs />} />
@@ -18,7 +16,6 @@ function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/password" element={<Password />} />
       </Routes>
-
     </>
   )
 }
