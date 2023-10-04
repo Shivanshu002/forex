@@ -1,7 +1,7 @@
 import { MdOutlineNewLabel } from 'react-icons/md'
 import { GrDocumentUpdate } from 'react-icons/gr';
 import { MdDeleteForever } from 'react-icons/md';
-import { BsFillSave2Fill } from 'react-icons/bs';   
+import { BsFillSave2Fill } from 'react-icons/bs';
 
 
 function Company() {

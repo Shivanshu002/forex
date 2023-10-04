@@ -20,15 +20,7 @@ function Rs() {
 
     return (
         <>
-            {/* {
-                data.map(() => {
-
-                })
-            } */}
-
-
-
-            <div className='flex gap-10 justify-center bg-gradient-to-r from-purple-500 to-blue-500 p-3  '>
+            <div className='lg:flex fixed flex-col top-[25%] left-0 gap-4 bg-gradient-to-r from-purple-500 to-blue-500 p-3  w-fit rounded-lg '>
                 <div className='hover hover:bg-gradient-to-r from-purple-500 to-pink-500 p-2 rounded duration-300'>
                     <MdOutlineNewLabel size={20} />
                     <span>New</span>
@@ -46,6 +38,9 @@ function Rs() {
                     <span>Save</span>
                 </div>
             </div>
+
+
+
 
             <div>
 
@@ -155,7 +150,7 @@ function Rs() {
 
                 </div>
 
-                <div className='box-border h-[400px]'>
+                <div className='box-border lg:h-[250px] h-[400px]'>
 
                     <div className='grid grid-flow-row lg:grid-flow-col justify-center'>
                         <div className='flex lg:justify-normal justify-between'>
@@ -195,19 +190,20 @@ function Rs() {
                         <div className='flex lg:justify-normal justify-between'>
                             <div className='box-border h-[10%] w-32 p-4  flex lg:flex-col flex-col gap-2' >
                                 <h1>Ammount:</h1>
+                                <h1>Risk Cat:</h1>
                             </div>
                             <div className='box-border h-[10%] w-fit p-4 text-center flex lg:flex-col flex-col gap-2'>
+                                <input type='text' />
                                 <input type='text' />
                             </div>
                         </div>
 
                     </div>
-                    <div className='my-5 flex justify-between'>
-                        <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Insert</button>
-                        <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Delete</button>
-                        <button className='p-1 w-40 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500'>Reset</button>
-                    </div>
-
+                </div>
+                <div className='container mx-auto bg-gradient-to-r from-purple-500 to-blue-500 p-3 w-fit rounded-lg'>
+                    <button className='p-1 w-20 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500 '>Insert</button>
+                    <button className='p-1 w-20 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500 '>Delete</button>
+                    <button className='p-1 w-20 m-2 rounded bg-gradient-to-r from-purple-500 to-pink-500 '>Reset</button>
                 </div>
 
             </div>
