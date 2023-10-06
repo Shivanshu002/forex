@@ -1,0 +1,7 @@
+function General() {
+    return (
+        <>
+        
+        </>
+    )
+}
